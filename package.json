@@ -1,0 +1,46 @@
+{
+  "name": "dsh-key-ledger",
+  "version": "1.0.1",
+  "private": true,
+  "type": "module",
+  "description": "钥匙簿：把 DSH 里散落的 API key / token / 证书 / 私钥收拢成一处总账，显示每条被哪些插件、技能、会话引用过，并支持查看、修改、删除；agent 取用密钥统一走 vault 工具。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "credentials",
+    "secrets",
+    "vault"
+  ],
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "docs",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "BSD-3-Clause",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}
