@@ -1,0 +1,8 @@
+# dsh-key-ledger（钥匙簿）的组合包 patch
+#
+# Host 半侧挂进 profile：路由 /dsh-key-ledger/api/*、工具 vault、系统提示纪律段、首次安装自动扫描。
+# Client 半侧（设置页「钥匙簿」）由 package.json 的 dsh.client 声明，
+# 宿主按声明自动组装，不需要在这里写。
+- insert:
+    - id: key-ledger
+      name: dsh-key-ledger
