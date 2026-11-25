@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Key ledger",
+    "description": "One ledger for every API key, token, authorization record, certificate and private key in this DSH install: shows which plugins, skills and sessions reference each credential, supports view, edit and delete, builds its index from existing sessions on first install, and is the single access path for agents.",
+    "detail": "docs/DETAIL.md"
+  }
+}
