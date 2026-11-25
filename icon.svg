@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Key ledger">
+  <defs>
+    <linearGradient id="vaultBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16233f"/>
+      <stop offset="0.55" stop-color="#1d3560"/>
+      <stop offset="1" stop-color="#132a4d"/>
+    </linearGradient>
+    <linearGradient id="vaultDial" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9ec8ff"/>
+      <stop offset="1" stop-color="#4d86e0"/>
+    </linearGradient>
+    <radialGradient id="vaultGlow" cx="0.32" cy="0.28" r="0.75">
+      <stop offset="0" stop-color="#7fb2ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#7fb2ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- door plate -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#vaultBody)"/>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#vaultGlow)"/>
+  <rect x="4.9" y="4.9" width="54.2" height="54.2" rx="13.2" fill="none" stroke="#3f6ea8" stroke-opacity="0.55" stroke-width="1.4"/>
+
+  <!-- bolts -->
+  <circle cx="12.5" cy="12.5" r="2" fill="#5d8fd0" fill-opacity="0.85"/>
+  <circle cx="51.5" cy="12.5" r="2" fill="#5d8fd0" fill-opacity="0.85"/>
+  <circle cx="12.5" cy="51.5" r="2" fill="#5d8fd0" fill-opacity="0.85"/>
+  <circle cx="51.5" cy="51.5" r="2" fill="#5d8fd0" fill-opacity="0.85"/>
+
+  <!-- dial -->
+  <circle cx="32" cy="32" r="14.5" fill="none" stroke="url(#vaultDial)" stroke-width="3.2"/>
+  <g stroke="#6f9fe0" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.75">
+    <path d="M32 15.5v3.2"/>
+    <path d="M32 45.3v3.2"/>
+    <path d="M15.5 32h3.2"/>
+    <path d="M45.3 32h3.2"/>
+  </g>
+
+  <!-- keyhole -->
+  <circle cx="32" cy="29.4" r="4.4" fill="#eaf2ff"/>
+  <path d="M30.2 32.6h3.6l1.5 7.2a1.4 1.4 0 0 1-1.37 1.7h-3.86a1.4 1.4 0 0 1-1.37-1.7z" fill="#eaf2ff"/>
+
+  <!-- spoke from dial to keyhole -->
+  <path d="M32 44.2v3.4" stroke="#9ec8ff" stroke-width="2.2" stroke-linecap="round" stroke-opacity="0.8"/>
+</svg>
